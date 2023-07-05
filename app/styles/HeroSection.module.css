@@ -1,0 +1,179 @@
+@keyframes move {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%);
+}
+
+.heading {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.special {
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#bitcoin {
+    position: absolute;
+    top: 22%;
+    left: 13%;
+    animation: move 2s infinite;
+}
+
+#ethereum {
+    position: absolute;
+    top: 22%;
+    right: 13%;
+    -webkit-animation: move 2s infinite;
+    animation: move 2s infinite;
+}
+
+.cryptoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    margin-top: 20px;
+}
+
+.crypto {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.name {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 600;
+    margin: 10px 5px;
+    font-size: 25px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.btn {
+    display: none;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 45px;
+    margin: 40px 0px;
+    cursor: pointer;
+}
+
+@media (max-width:1310px) {
+    #bitcoin {
+        left: 11%;
+    }
+
+    #ethereum {
+        right: 11%;
+    }
+}
+
+@media (max-width:1120px) {
+    .heading {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:1020px) {
+    #bitcoin {
+        width: 50px;
+        height: 50px;
+        left: 11%;
+        top: 21%;
+    }
+
+    #ethereum {
+        width: 50px;
+        height: 50px;
+        right: 11%;
+        top: 21%;
+    }
+}
+
+@media (max-width:925px) {
+    #bitcoin {
+        left: 9%;
+    }
+
+    #ethereum {
+        right: 9%;
+    }
+
+    .image {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width:830px) {
+
+    #bitcoin,
+    #ethereum {
+        display: none;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:750px) {
+    #heroSection {
+        height: auto;
+    }
+
+    #top {
+        margin-top: 50px;
+    }
+
+    .cryptoContainer {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+}
+
+@media (max-width:700px) {
+    .heading {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:420px) {
+    .heading {
+        font-size: 40px;
+    }
+}

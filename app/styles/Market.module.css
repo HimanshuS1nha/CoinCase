@@ -1,0 +1,89 @@
+.market {
+    display: flex;
+    flex-direction: column;
+}
+
+#secHeading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.marketList {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    border-radius: 5px;
+    height: 8vh;
+    align-items: center;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+}
+
+.marketList:hover {
+    background-color: #ff00ea;
+    cursor: pointer;
+}
+
+.specialList {
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.marketLink {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 20px;
+}
+
+.image {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+#horizontalLine {
+    margin: 0px 20px;
+}
+
+.colorRed {
+    color: red;
+}
+
+.colorGreen {
+    color: green;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+@media (max-width:800px) {
+    .market {
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f051d;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+td,
+th {
+  border: 1px solid;
+  padding: 20px;
+}
+
+table {
+  margin: 10px;
+}

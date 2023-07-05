@@ -1,0 +1,46 @@
+.social {
+    background: url('/footer.webp') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.footerLink {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    margin: 0 20px;
+}
+
+.footerLink:hover,
+.termsLink:hover {
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.termsLink {
+    color: white;
+    margin: 0px 5px;
+}
+
+@media (max-width:1200px) {
+    .social {
+        background: none;
+    }
+}

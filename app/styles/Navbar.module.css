@@ -1,0 +1,116 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    height: 10vh;
+}
+
+#logo {
+    font-weight: 800;
+}
+
+.hamburgerContainer {
+    border: 2px solid white;
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    z-index: 3;
+}
+
+.hamburger {
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.navbarList {
+    display: flex;
+}
+
+.navbarLink {
+    margin: 0px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.iconLinks {
+    color: white;
+    font-size: 27px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.navbarLink:hover,
+.iconLinks:hover {
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.mobileList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    top: 10%;
+    padding-bottom: 50px;
+}
+
+.mobileLink {
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    display: inline-block;
+}
+
+.mobileLink:hover {
+    color: black;
+}
+
+.iconList {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    top: 48%;
+    z-index: 2;
+}
+
+.mobileIconLinks {
+    color: white;
+    font-size: 27px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.mobileIconLinks:hover {
+    color: black;
+}
+
+@media (max-width:785px) {
+    .hamburgerContainer {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: normal;
+        justify-content: space-around;
+    }
+
+    .navbarList {
+        display: none;
+    }
+
+    #logo {
+        margin-top: 20px;
+    }
+}
